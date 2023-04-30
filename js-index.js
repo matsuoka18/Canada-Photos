@@ -1,3 +1,13 @@
+function start(){
+size = screen.width;
+console.log("size:"+size);
+if(size < 760){
+document.getElementById("setimg").src = "pic/Img999.JPG";
+}else{
+document.getElementById("setimg").src = "pic/img921.jpg"
+}
+}
+
 function next1(){
     document.getElementById("all1").style.display = "none";
     document.getElementById("all1").style.opacity = "0";

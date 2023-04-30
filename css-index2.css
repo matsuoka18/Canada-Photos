@@ -1,0 +1,161 @@
+body{
+font-family:monospace;
+margin:0;
+padding:0;
+}
+.all1{
+display: block;
+}
+.top{
+    height:80vw;
+}
+.top p {
+    margin:0;
+    margin-top:-10vw;
+    padding:0;
+    font-weight:600;
+    font-size:25vw;
+    width:100vw;
+    text-align:center;
+}
+.h1{
+    margin-right:0;
+    font-size: 25vw;
+    width: 90vw;
+    margin-left: 0vw;
+    letter-spacing: 1vw;
+    color: black;
+}
+.h1 span{
+    color:red;
+}
+.img1 img{
+    width:100vw;
+    height:auto;
+    margin-top:80vw;
+}
+.img1 p{
+    margin-top:-120vw;
+    padding:0;
+    font-size:20vw;
+    font-weight:600;
+    color:white;
+    margin-left:5vw;
+    letter-spacing:1vw;
+}
+.img1 div{
+    text-align:center;
+    padding:5vw;
+    width:35vw;
+    font-size:2vw;
+    margin-left:6vw;
+margin-top:60vw;
+    outline: 3px solid white;
+font-size:5vw;
+color:white;
+   transition: 0.1s;
+}
+
+.img1 div:hover{
+    border-radius:50px;
+    font-size:5.2vw;
+}
+.img1 div:active{
+ outline:none;
+font-weight:550;
+}
+
+.all2{
+    display: none;
+    opacity:0;
+}
+.top2{
+    font-size:10vw;
+    letter-spacing:0.5vw;
+    margin-left:5vw;
+}
+
+.pics img{
+    width:70vw;
+    margin-top:3vw;
+    margin-bottom:3vw;
+    margin-left:15vw;
+    margin-right:15vw;
+    border-radius:30px;
+}
+.pics2 p{
+    margin:0;
+font-size:7vw;
+width:34vw;
+padding:4vw;
+text-align:center;
+background-color: black;
+color:white;
+}
+.pics2 input{
+    border-radius:20px;
+    text-align:center;
+    padding:0;
+    width:42vw;
+    height:5vw;
+    padding-top:3vw;
+    padding-bottom:3vw;
+    font-size:5vw;
+    border:none;
+    outline:none;
+}
+
+.pics2{
+    padding:0;
+    margin-left:5vw;
+    width:42vw;
+    border:1px solid black;
+}
+.back{
+    text-align:center;
+    border-radius:5vw;
+    padding:2vw;
+    width:25vw;
+    margin-left:5vw;
+    font-size:5vw;
+    font-weight:600;
+    background-color:black;
+    color:white;
+    transition:0.2s;
+    float:left;
+}
+
+.back:hover{
+    background-color:white;
+    color:black;
+}
+.down{
+    display:none;
+    text-align:center;
+    border-radius:5vw;
+    padding:2vw;
+    width:25vw;
+
+    font-size:5vw;
+    font-weight:600;
+    background-color:black;
+    color:white;
+    transition:0.2s;
+    float:right;
+    margin-right:5vw;
+}
+.down:hover{
+    background-color:white;
+    color:black;
+}
+.buttons{
+    width:100vw;
+   margin-bottom:10vw;
+}
+.down a{
+    text-decoration: none;
+    color:white;
+}
+.down a:hover{
+    color:black;
+}
