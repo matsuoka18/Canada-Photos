@@ -82,6 +82,7 @@ font-weight:550;
     margin-left:15vw;
     margin-right:15vw;
     border-radius:30px;
+    box-shadow:0 0 10px 5px lightgray;
 }
 .pics2 p{
     margin:0;
