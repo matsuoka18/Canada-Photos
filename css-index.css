@@ -300,6 +300,24 @@ animation-fill-mode:forwards;
     margin-left: 5vw;
     width: 17vw;
     border: 1px solid black;
+
+    display: none;
+}
+
+.pics22{
+    padding: 0;
+    margin-left: 5vw;
+    width: 17vw;
+    border: 1px solid black;
+}
+.pics22 p{
+    margin: 0;
+    font-size: 2vw;
+    width: 15vw;
+    padding: 1vw;
+    text-align: center;
+    background-color: black;
+    color: white;
 }
 
 .back {
@@ -354,4 +372,25 @@ animation-fill-mode:forwards;
 
 .down a:hover {
     color: black;
+}
+.pics22p{
+    padding:0;
+    margin:0;
+    width:90vw;
+    display: inline-block;
+
+}
+.pics22p img{
+    width:30vw;
+    height:auto;
+   padding:0;
+   margin:0;
+  box-shadow:none;
+  border-radius:0;
+}
+.sum{
+    background-color: white;
+    color:black;
+    margin-left:5vw;
+    font-size:2vw;
 }
