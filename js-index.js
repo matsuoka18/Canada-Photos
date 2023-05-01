@@ -2,7 +2,8 @@ function start(){
 size = screen.width;
 console.log("size:"+size);
 if(size < 760){
-document.getElementById("setimg").src = "pic/Img999.JPG";
+
+location.href = "index2.html";
 }else{
 document.getElementById("setimg").src = "pic/img921.jpg"
 }
@@ -59,4 +60,83 @@ function back(){
 function DownLoad(){
     document.getElementById("down2").href = textt;
     document.getElementById("down2").download = textt;
+}
+num = 0;
+function search(){
+    num++;
+    if(num == 1){
+    document.getElementById("search2").style.display = "block";
+    document.getElementById("search2").style.opacity = "1";
+  //  document.getElementById("tables").style.display = "block";
+   // document.getElementById("tables").style.opacity = "1";
+    }else{
+        document.getElementById("search2").style.display = "none";
+        document.getElementById("search2").style.opacity = "0";
+        document.getElementById("tables").style.display = "none";
+       document.getElementById("tables").style.opacity = "0";
+       num = 0;
+    }
+}
+function people(){
+    document.getElementById("search2").style.display = "block";
+    document.getElementById("search2").style.opacity = "1";
+     num =1;
+    document.getElementById("tables").style.display = "block";
+    document.getElementById("tables").style.opacity = "1";
+    document.getElementById("search3").style.display = "block";
+    document.getElementById("search3").style.opacity = "1";
+    document.getElementById("span2").style.borderBottom = "1px solid white";
+    document.getElementById("span2").style.paddingRight = "9.6vw";
+    document.getElementById("search4").style.display = "none";
+    document.getElementById("search4").style.opacity = "0";
+    document.getElementById("search5").style.display = "none";
+    document.getElementById("search5").style.opacity = "0";
+        document.getElementById("span22").style.borderLeft = "0.4vw solid white";
+    document.getElementById("span22").style.borderBottom = "0vw solid white";
+    document.getElementById("span22").style.paddingRight = "0px";
+    document.getElementById("span222").style.borderLeft = "0.4vw solid white";
+    document.getElementById("span222").style.borderBottom = "0vw solid white"
+    document.getElementById("span222").style.paddingRight = "0px"; 
+}
+function place(){
+    document.getElementById("search2").style.display = "block";
+    document.getElementById("search2").style.opacity = "1";
+    num =1;
+    document.getElementById("tables").style.display = "block";
+    document.getElementById("tables").style.opacity = "1";
+    document.getElementById("search3").style.display = "none";
+    document.getElementById("search3").style.opacity = "0";
+    document.getElementById("search4").style.display = "block";
+    document.getElementById("search4").style.opacity = "1";
+    document.getElementById("span22").style.borderBottom = "1px solid white";
+    document.getElementById("span22").style.paddingRight = "9.6vw";
+    document.getElementById("search5").style.display = "none";
+    document.getElementById("search5").style.opacity = "0";
+    document.getElementById("span2").style.borderLeft = "0.4vw solid white";
+    document.getElementById("span2").style.borderBottom = "none";
+    document.getElementById("span2").style.paddingRight = "0";
+    document.getElementById("span222").style.borderLeft = "0.4vw solid white";
+    document.getElementById("span222").style.borderBottom = "none";
+    document.getElementById("span222").style.paddingRight = "0";
+}
+function other(){
+    document.getElementById("search2").style.display = "block";
+    document.getElementById("search2").style.opacity = "1";
+    num =1;
+    document.getElementById("tables").style.display = "block";
+    document.getElementById("tables").style.opacity = "1";
+    document.getElementById("search3").style.display = "none";
+    document.getElementById("search3").style.opacity = "0"
+    document.getElementById("search4").style.display = "none";
+    document.getElementById("search4").style.opacity = "0";
+    document.getElementById("search5").style.display = "block";
+    document.getElementById("search5").style.opacity = "1";
+    document.getElementById("span222").style.borderBottom = "1px solid white";
+    document.getElementById("span222").style.paddingRight = "9.6vw";
+    document.getElementById("span2").style.borderLeft = "0.4vw solid white";
+    document.getElementById("span2").style.borderBottom = "none";
+    document.getElementById("span2").style.paddingRight = "0";
+    document.getElementById("span22").style.borderLeft = "0.4vw solid white";
+    document.getElementById("span22").style.borderBottom = "none";
+    document.getElementById("span22").style.paddingRight = "0";
 }
