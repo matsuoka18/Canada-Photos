@@ -4,7 +4,7 @@ margin:0;
 padding:0;
 }
 .all1{
-display: block;
+display: none;
 }
 .top{
     height:80vw;
@@ -66,97 +66,349 @@ font-weight:550;
 }
 
 .all2{
+    display: block;
+    opacity:1;
+}
+.top2 {
+    font-size: 10vw;
+    letter-spacing: 0.5vw;
+    margin-left: 5vw;
+    display: flex;
+}
+.top2 h1{
+    height:fit-content;
+    margin-top:0;
+    margin-bottom:0;
+}
+.table {
+
+}
+
+
+.search {
+    width: 100vw;
+    margin-top: 25vw;
+    position:absolute;left:0;
+}
+
+.search1 {
+
+    float:left;
+    background-color: black;
+    color: white;
+    width: 40vw;
+    font-size:8vw;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom:1vw;
+}
+.ani:hover .search2{
+animation-name:s2;
+animation-duration:0.5s;
+animation-fill-mode:forwards;
+display: block;
+opacity: 1;
+}
+@keyframes s2{
+    from{
+      height:0;
+      
+    }
+    to{
+        height:45vw;
+    }
+}
+.ani:checked .search2{
+    background-color: red;
+    color: white;
+    margin: 0;
+    padding: 0;
+    width: 40vw;
+    height:45vw;
+    display: block;
+    opacity:1;
+    z-index:100;
+}
+.search2 {
+
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+    width: 40vw;
+    height:50vw;
     display: none;
     opacity:0;
-}
-.top2{
-    font-size:10vw;
-    letter-spacing:0.5vw;
-    margin-left:5vw;
+    z-index:100;
 }
 
-.pics img{
-    width:70vw;
-    margin-top:3vw;
-    margin-bottom:3vw;
-    margin-left:15vw;
-    margin-right:15vw;
-    border-radius:30px;
-    box-shadow:0 0 10px 5px lightgray;
-}
-.pics2 p{
-    margin:0;
-font-size:7vw;
-width:34vw;
-padding:4vw;
-text-align:center;
-background-color: black;
-color:white;
-}
-.pics2 input{
-    border-radius:20px;
-    text-align:center;
-    padding:0;
-    width:42vw;
-    height:5vw;
-    padding-top:3vw;
-    padding-bottom:3vw;
-    font-size:5vw;
-    border:none;
-    outline:none;
+.search2 p {
+    margin: 0;
+    padding: 0;
+    padding-left: 1vw;
+    padding-top:1vw;
+    margin-top: 1vw;
+    padding-bottom: 1vw;
+    width: 50vw;
+    font-size: 6vw;
+    text-align: left;
+    letter-spacing: 0;
 }
 
-.pics2{
-    padding:0;
-    margin-left:5vw;
-    width:42vw;
-    border:1px solid black;
-}
-.back{
-    text-align:center;
-    border-radius:5vw;
-    padding:2vw;
-    width:25vw;
-    margin-left:5vw;
-    font-size:5vw;
-    font-weight:600;
-    background-color:black;
-    color:white;
-    transition:0.2s;
-    float:left;
+.search2 span {
+    border-left: 1vw solid white;
+    padding-left: 1vw;
+    padding-bottom: 0.2vw;
 }
 
-.back:hover{
-    background-color:white;
-    color:black;
+.search2 span:hover {
+    border-bottom: 1vw solid white;
+    animation-name: hello;
+    animation-duration: 1.0s;
+    animation-fill-mode: forwards;
 }
-.down{
-    display:none;
-    text-align:center;
-    border-radius:5vw;
-    padding:2vw;
-    width:25vw;
 
-    font-size:5vw;
-    font-weight:600;
-    background-color:black;
-    color:white;
-    transition:0.2s;
-    float:right;
-    margin-right:5vw;
+.search2 span:checked {
+    font-weight: 550;
 }
-.down:hover{
-    background-color:white;
-    color:black;
+
+@keyframes hello {
+    from {
+        padding-right: 0vw;
+    }
+
+    to {
+        padding-right: 10vw;
+    }
 }
-.buttons{
-    width:100vw;
-   margin-bottom:10vw;
+
+.search2 .span2:checked {
+    font-weight: 550;
 }
-.down a{
+
+.search2 .span2:hover {
+    border-bottom: 1vw solid white;
+    animation-name: hello2;
+    animation-duration: 1.0s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes hello2 {
+    from {
+        padding-right: 0vw;
+    }
+
+    to {
+        padding-right: 9.6vw;
+    }
+}
+
+.tables {
+    margin-top: 0vw;
+    width: 100vw;
+    height:200vw;
+    background-color: black;
+    color: white;
+    display: none;
+    z-index:0;
+}
+.tables p:hover{
+
+animation-name:name;
+animation-duration:0.1s;
+animation-fill-mode:forwards;
+}
+@keyframes name{
+    from{
+        font-weight:500;
+        font-size:10vw;
+    }
+    to{
+        font-weight:550;
+        font-size:11vw;
+    }
+}
+.search3 {
+    height:20vw;
+    display: none;
+    padding-left:5vw;
+}
+
+.search3 p {
+    margin-left: 3vw;
+    padding: 0;
+    font-size: 10vw;
+    letter-spacing: 0;
+    display: inline-block;
+}
+
+.search4 {
+    display: none;
+}
+
+.search4 p {
+    margin-left: 1vw;
+    padding: 0;
+    font-size: 10vw;
+    letter-spacing: 0;
+    display: inline-block;
+}
+
+.search5 {
+    width: 75vw;
+   display:none
+}
+
+.search5 p {
+    margin-left: 1vw;
+    padding: 0;
+    font-size: 10vw;
+    letter-spacing: 0;
+    display: inline-block;
+}
+
+
+.pics{
+width:100vw;
+margin-top:10vw;
+margin-left:0;
+}
+
+.pics img {
+    width: 95vw;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+    margin-left:2.5vw;
+    margin-right:2.5vw;
+    border-radius: 30px;
+    box-shadow: 0 0 10px 5px lightgray;
+}
+
+.pics2 p {
+    margin: 0;
+    font-size: 6vw;
+    width: 40vw;
+    padding: 1vw;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+.pics2 input {
+    border-radius: 20px;
+    text-align: center;
+    padding: 0;
+    width: 42vw;
+    height: 10vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    font-size: 6vw;
+    border: none;
+    outline: none;
+}
+
+.pics2 {
+    padding: 0;
+    width: 42vw;
+    border: 1px solid black;
+
+    display: none;
+}
+
+.pics22{
+
+    padding: 0;
+
+    width: 50vw;
+    border: 1px solid black;
+    display: none;
+}
+.pics22 p{
+    margin: 0;
+    font-size: 7vw;
+    width: 48vw;
+    height:10vw;
+    padding: 1vw;
+
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+.back {
+    text-align: center;
+    border-radius: 5vw;
+    padding: 3vw;
+    width: 40vw;
+
+    font-size: 6vw;
+    font-weight: 600;
+    background-color: black;
+    color: white;
+    transition: 0.2s;
+    float: left;
+    margin-top:25vw;
+}
+
+.back:hover {
+    background-color: white;
+    color: black;
+}
+
+.down {
+    display: none;
+    text-align: center;
+    border-radius: 5vw;
+    padding: 3vw;
+    width: 40vw;
+    margin-top:25vw;
+    font-size: 6vw;
+    font-weight: 600;
+    background-color: black;
+    color: white;
+    transition: 0.2s;
+    float: right;
+    margin-left: 3vw;
+}
+
+.down:hover {
+    background-color: white;
+    color: black;
+}
+
+.buttons {
+    width: 100vw;
+    margin-bottom: 10vw;
+}
+
+.down a {
     text-decoration: none;
-    color:white;
+    color: white;
 }
-.down a:hover{
+
+.down a:hover {
+    color: black;
+}
+.pics22p{
+
+    padding:0;
+    margin:0;
+    width:100vw;
+    display: inline-block;
+
+}
+.pics22p img{
+    width:100vw;
+    height:auto;
+   padding:0;
+   margin:0;
+  box-shadow:none;
+  border-radius:0;
+}
+.sum{
+    
+    background-color: white;
     color:black;
+    margin-left:5vw;
+    font-size:5vw;
 }
