@@ -5,7 +5,7 @@ body {
 }
 
 .all1 {
-    display: none;
+    display: block;
 }
 
 .top {
@@ -77,8 +77,8 @@ body {
 }
 
 .all2 {
-    display: block;
-    opacity: 1;
+    display: none;
+    opacity: 0;
 }
 
 .top2 {
