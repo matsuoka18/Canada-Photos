@@ -2051,3 +2051,6 @@ function p12() {
         }
     }
 }
+function send(){
+    location.href = 'mailto:'+'kazukazu.18@icloud.com'+'?subject='+'本文に写真を添付して送ってね';
+}
