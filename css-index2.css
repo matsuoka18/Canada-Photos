@@ -7,7 +7,7 @@ body{
     display: block;
     }
     .top{
-        height:80vw;
+        height:90vw;
     }
     .top p {
         margin:0;
@@ -20,8 +20,8 @@ body{
     }
     .h1{
         margin-right:0;
-        font-size: 25vw;
-        width: 90vw;
+        font-size: 20vw;
+        width: 80vw;
         margin-left: 0vw;
         letter-spacing: 1vw;
         color: black;
