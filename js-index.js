@@ -2052,5 +2052,50 @@ function p12() {
     }
 }
 function send(){
-    location.href = 'mailto:'+'kazukazu.18@icloud.com'+'?subject='+'本文に写真を添付して送ってね';
+    //location.href = 'mailto:'+'kazukazu.18@icloud.com'+'?subject='+'本文に写真を添付して送ってね';
 }
+async function uploadImage() {
+    const fileInput = document.getElementById('image-input');
+    const file = fileInput.files[0];
+  
+    if (!file) {
+      alert('画像ファイルを選択してください');
+      return;
+    }
+  
+    const reader = new FileReader();
+    reader.onload = async function(event) {
+      const imageData = event.target.result;
+      const fileName = file.name;
+  
+      const uploadUrl = `https://api.github.com/repos/matsuoka18/Canada/contents/pic/${fileName}`;
+      const accessToken = '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';
+  
+      const uploadData = {
+        message: '画像のアップロード',
+        content: imageData.split(',')[1],
+      };
+  
+      try {
+        const response = await fetch(uploadUrl, {
+          method: 'PUT',
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${accessToken}`,
+          },
+          body: JSON.stringify(uploadData),
+        });
+  
+        if (response.ok) {
+          alert('画像がアップロードされました');
+        } else {
+          alert('画像のアップロードに失敗しました');
+        }
+      } catch (error) {
+        console.error('ネットワークエラー:', error);
+      }
+    };
+  
+    reader.readAsDataURL(file);
+  }
+  
